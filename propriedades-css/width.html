@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>width</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .back {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .back > div[class^=width] {
+            border-width: 2px;
+            border-style: solid;
+            margin-bottom: 2%;
+            height: 40px;
+        }
+        
+        .width-auto {
+            width: auto;
+            border-color: #00598daa;
+        }
+
+        .width-vwvh {
+            width: 50vw;
+            border-color: #008d44aa;
+        }
+        
+        .width-percent {
+            width: 50vw;
+            border-color: #eb6767aa;
+        }
+        .width-pixel {
+            width: 350px;
+            border-color: #c82aaeaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="back">
+        <div class="width-auto">AUTO: Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit optio odit eum odio assumenda. Maxime libero officiis magni quis, cumque ex blanditiis assumenda doloremque ut deleniti similique, ipsam accusamus maiores?</div>
+        <div class="width-vwvh">VWVH: Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit optio odit eum odio assumenda. Maxime libero officiis magni quis, cumque ex blanditiis assumenda doloremque ut deleniti similique, ipsam accusamus maiores?</div>
+        <div class="width-percent">PERCENT: Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit optio odit eum odio assumenda. Maxime libero officiis magni quis, cumque ex blanditiis assumenda doloremque ut deleniti similique, ipsam accusamus maiores?</div>
+        <div class="width-pixel">PIXEL: Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit optio odit eum odio assumenda. Maxime libero officiis magni quis, cumque ex blanditiis assumenda doloremque ut deleniti similique, ipsam accusamus maiores?</div>
+    </div>
+</body>
+</html>

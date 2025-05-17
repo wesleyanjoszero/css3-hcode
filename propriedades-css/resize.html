@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resize</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content {
+            width: 50vw;
+        }
+
+        .item {
+            resize: both;
+            overflow: auto;
+        }
+
+        p:nth-child(2) {
+            resize: block;
+        }
+
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <p class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. A minus, eaque dolorem fugiat temporibus error nam, incidunt beatae corrupti esse nobis quam nulla ipsam iusto cumque voluptatum sapiente odit exercitationem.</p>
+        <p class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. A minus, eaque dolorem fugiat temporibus error nam, incidunt beatae corrupti esse nobis quam nulla ipsam iusto cumque voluptatum sapiente odit exercitationem.</p>
+    </div>
+    <form>
+        <textarea></textarea>
+    </form>
+</body>
+</html>
